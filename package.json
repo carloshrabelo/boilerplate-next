@@ -31,7 +31,10 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "env-path": "^1.0.7"
+    "env-path": "^1.0.7",
+    "eslint": "^5.15.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^5.0.0"
   },
   "_moduleAliases": {
     "@root": ".",

@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { randomData } from "../../../mock/users";
+import { randomData } from "@mock/users";
+import API from "@API";
 
 const router = Router();
 
-router.get("/users", (req, res) => {
+router.get(API.USERS, (req, res) => {
   res.status(200).send(randomData);
 });
 

@@ -1,5 +1,4 @@
-// Transpile all code following this line with babel and use 'env' (aka ES6) preset.
-
+require("module-alias")();
 require("babel-polyfill");
 require("babel-register")({
   presets: ["env"]

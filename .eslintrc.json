@@ -1,0 +1,24 @@
+{
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"extends": [
+		"google",
+		"plugin:prettier/recommended",
+		"plugin:react/recommended"
+	],
+	"rules": {
+		"func-style": ["error", "expression", { "allowArrowFunctions": true }]
+	},
+	"plugins": ["jest", "react", "prettier"],
+	"env": {
+		"jest/globals": true,
+		"browser": true
+	},
+	"settings": {
+		"react": {
+			"version": "16.6"
+		}
+	}
+}

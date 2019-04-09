@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Clock from './clock';
 import Counter from './counter';
@@ -12,7 +13,7 @@ const Examples = ({ lastUpdate, light }) => (
 
 Examples.propTypes = {
 	lastUpdate: PropTypes.any,
-	light: PropTypes.string
+	light: PropTypes.bool
 };
 
 const mapStateToProps = ({ lastUpdate, light }) => ({ lastUpdate, light });

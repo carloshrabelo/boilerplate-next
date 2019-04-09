@@ -12,7 +12,7 @@ const Clock = ({ lastUpdate, light }) => (
 
 Clock.propTypes = {
 	lastUpdate: PropTypes.any,
-	light: PropTypes.string
+	light: PropTypes.bool
 };
 
 export default Clock;

@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Clock from './clock';
-import Counter from './counter';
 
-const Examples = ({ lastUpdate, light }) => (
+const Examples = ({ data }) => (
 	<>
-		<Clock lastUpdate={lastUpdate} light={light} />
-		<Counter />
+		<ul>
+			{data.map(({ email }, i) => (
+				<li key={i}>{email}</li>
+			))}
+		</ul>
 	</>
 );
 
 Examples.propTypes = {
-	lastUpdate: PropTypes.any,
-	light: PropTypes.bool
+	data: PropTypes.any
 };
 
-const mapStateToProps = ({ lastUpdate, light }) => ({ lastUpdate, light });
+const mapStateToProps = ({ users }) => users;
 
 export default connect(mapStateToProps)(Examples);

@@ -9,7 +9,8 @@
 		"plugin:react/recommended"
 	],
 	"rules": {
-		"func-style": ["error", "expression", { "allowArrowFunctions": true }]
+		"func-style": ["error", "expression", { "allowArrowFunctions": true }],
+		"new-cap": ["error", { "newIsCap": true }]
 	},
 	"plugins": ["jest", "react", "prettier"],
 	"env": {

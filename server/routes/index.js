@@ -1,11 +1,11 @@
-import users from "./users";
+import users from './users';
 
-import usersMock from "./users/mock";
+import usersMock from './users/mock';
 
 export default {
-  users
+	users
 };
 
 export const mock = {
-  users: usersMock
+	users: usersMock
 };

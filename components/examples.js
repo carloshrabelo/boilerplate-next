@@ -1,12 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from '../server/nRoutes';
 
 const Examples = ({ data }) => (
 	<>
 		<ul>
-			{data.map(({ firstName }, i) => (
-				<li key={i}>{firstName}</li>
+			{data.map(({ firstName, lastName }, id) => (
+				<li key={id}>
+					<Link route="user" params={{ id, slug: firstName }}>
+						<a>
+							{firstName} {lastName}
+						</a>
+					</Link>
+				</li>
 			))}
 		</ul>
 	</>

@@ -1,3 +1,5 @@
+import API from '@API';
+
 const types = {
 	REQUEST: 'REQUEST',
 	RECEIVE: 'RECEIVE',
@@ -32,7 +34,7 @@ export const reset = () => ({
 
 export const _fetch = () => dispatch => {
 	dispatch(request());
-	return fetch('/users')
+	return fetch(API.USERS)
 		.then(response => {
 			response.json().then(json => dispatch(receive(json)));
 		})

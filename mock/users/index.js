@@ -1,13 +1,12 @@
-import { name, internet } from 'faker';
+import { name } from 'faker';
 
 import be from './be';
 import bff from './bff';
 
 const generate = id => ({
 	id,
-	first_name: name.firstName(),
-	last_name: name.lastName(),
-	email: internet.email(),
+	firstName: name.firstName(),
+	lastName: name.lastName(),
 	avatar: `https://placeimg.com/128/128/people/${id}`
 });
 

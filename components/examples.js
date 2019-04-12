@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 const Examples = ({ data }) => (
 	<>
 		<ul>
-			{data.map(({ email }, i) => (
-				<li key={i}>{email}</li>
+			{data.map(({ firstName }, i) => (
+				<li key={i}>{firstName}</li>
 			))}
 		</ul>
 	</>
